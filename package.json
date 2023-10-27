@@ -1,7 +1,7 @@
 {
   "name": "be-realgrande",
   "version": "1.0.0",
-  "description": "Backend for meadowhills class project",
+  "description": "Backend for real grande class project",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
