@@ -7,7 +7,7 @@ dotenv.config();
 //require CORS and select CORS policy
 const cors = require('cors'); 
 let corspolicy = {
-    origin: 'http://localhost:3000'
+    origin:process.env.FRONTEND_URL
 }
 
 

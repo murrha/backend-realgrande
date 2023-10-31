@@ -72,7 +72,7 @@ allRouter.post('/register', getFields.none(), async (req, res) => {
 //storing enquiries
 allRouter.get('/allenquiries', async (req, res) => {
 
-    const enquiryData = await Enquiries.find({});
+    const enquiryData = await Enquiries.find({}).sort({date: -1});
     try{
         res.send(enquiryData);
          
@@ -80,8 +80,5 @@ allRouter.get('/allenquiries', async (req, res) => {
         res.status(500).send(error);
     }
 })
-
-
-
 
 module.exports = allRouter; 
