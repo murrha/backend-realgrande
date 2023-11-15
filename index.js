@@ -50,5 +50,5 @@ app.use('/', allRouter);
 
 //will be keeping the port in .env file
 app.listen(process.env.PORT, () => {
-    console.log(`Real Grande server listening at http://localhost:${process.env.PORT}`);
+    console.log(`Real Grande server listening at http://3.82.122.5:${process.env.PORT}`);
 })
